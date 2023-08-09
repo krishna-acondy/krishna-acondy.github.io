@@ -3,9 +3,9 @@
 import React from 'react';
 import styles from './page.module.css';
 import { Typewriter } from 'react-simple-typewriter';
-import Image from 'next/image';
 import { Fira_Code } from 'next/font/google';
 import Contact from '../components/Contact';
+import me from './me.jpeg';
 
 const firaCode = Fira_Code({ subsets: ['latin'], weight: '400' });
 
@@ -34,18 +34,12 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.center}>
-        <Image
-          src='/me.jpeg'
+        <div
           className={styles.image}
-          alt='Profile Picture'
           style={{
-            width: 'auto',
-            height: '100%',
+            backgroundImage: `url(${me.src})`,
           }}
-          width={640}
-          height={640}
-          priority
-        />
+        ></div>
         <div className={`${firaCode.className} ${styles.header}`}>
           <h2>
             <Typewriter words={['Krishna Acondy']} typeSpeed={typingSpeed} />
