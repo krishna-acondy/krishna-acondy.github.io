@@ -2,13 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  justify-content: space-around;
+  min-height: calc(100vh - 64px);
   padding: 2rem 2rem 0 2rem;
 }
 
 .header {
   padding: 2rem;
-  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  border: 1px solid rgba(var(--card-border-rgb), 0.25);
+  background: rgba(var(--card-rgb), 0.25);
   border-radius: var(--border-radius);
   opacity: 0.9;
   text-align: center;
@@ -33,9 +35,14 @@
 }
 
 .button {
-  border: 1px solid rgb(var(--foreground-rgb));
+  border: 1px solid rgba(var(--foreground-rgb), 0.5);
+  color: rgba(var(--foreground-rgb), 0.9);
   border-radius: var(--border-radius);
   padding: 0.5rem;
+}
+
+.button:visited {
+  color: rgba(var(--foreground-rgb), 0.9);
 }
 
 .center {
@@ -56,6 +63,7 @@
 @media (max-width: 700px) {
   .main {
     padding: 1rem 1rem 0 1rem;
+    justify-content: space-between;
   }
 
   .center {
@@ -94,6 +102,7 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .main {
     padding: 1rem 1rem 0 1rem;
+    justify-content: space-around;
   }
 
   .center {

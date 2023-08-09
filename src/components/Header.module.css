@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  position: sticky;
+  height: 64px;
+  box-shadow: 0 4px 3px -4px rgba(var(--card-rgb), 1);
+  background: rgba(var(--card-rgb), 0.2);
+}
