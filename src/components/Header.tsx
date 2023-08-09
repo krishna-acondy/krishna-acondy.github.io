@@ -9,11 +9,11 @@ function Logo() {
     >
       <defs>
         <linearGradient id='gradient' x1='1' y1='0.5' x2='0' y2='0.5'>
-          <stop offset='0%' stop-color='#9ae6b4' />
-          <stop offset='19.6%' stop-color='#81ceb5' />
-          <stop offset='39.2%' stop-color='#6ab6b0' />
-          <stop offset='58.8%' stop-color='#539ea9' />
-          <stop offset='98%' stop-color='#2b6cb0' />
+          <stop offset='0%' stopColor='#9ae6b4' />
+          <stop offset='19.6%' stopColor='#81ceb5' />
+          <stop offset='39.2%' stopColor='#6ab6b0' />
+          <stop offset='58.8%' stopColor='#539ea9' />
+          <stop offset='98%' stopColor='#2b6cb0' />
         </linearGradient>
         <style>
           {`rect {

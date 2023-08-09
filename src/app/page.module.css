@@ -36,13 +36,39 @@
 
 .button {
   border: 1px solid rgba(var(--foreground-rgb), 0.5);
-  color: rgba(var(--foreground-rgb), 0.9);
   border-radius: var(--border-radius);
   padding: 0.5rem;
+  position: relative;
 }
 
-.button:visited {
-  color: rgba(var(--foreground-rgb), 0.9);
+.button span {
+  background: -webkit-linear-gradient(
+    90deg,
+    #9ae6b4 0%,
+    #81ceb5 30.43%,
+    #539ea9 68.23%,
+    #2b6cb0 98%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button:hover {
+  background: linear-gradient(
+        rgb(var(--background-start-rgb)),
+        rgb(var(--background-start-rgb))
+      )
+      padding-box,
+    linear-gradient(
+        to right,
+        #9ae6b4 0%,
+        #81ceb5 30.43%,
+        #539ea9 68.23%,
+        #2b6cb0 98%
+      )
+      border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
 }
 
 .center {
@@ -110,7 +136,7 @@
   }
 
   .header {
-    min-height: 192px;
+    min-height: 240px;
     min-width: calc(100vw - 4rem);
   }
 }

@@ -62,7 +62,7 @@ export default function Home() {
             rel='noopener noreferrer'
             style={{ visibility: showButton ? 'visible' : 'hidden' }}
           >
-            Download CV
+            <span>Download CV</span>
           </a>
         </div>
       </div>
