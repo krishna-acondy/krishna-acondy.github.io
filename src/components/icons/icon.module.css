@@ -1,0 +1,8 @@
+.icon {
+  fill: rgb(var(--icon-fill-rgb));
+  opacity: var(--icon-fill-opacity);
+}
+
+.container:hover {
+  opacity: 0.75;
+}
