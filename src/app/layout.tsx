@@ -1,10 +1,10 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Fira_Code } from 'next/font/google';
 import Head from 'next/head';
 import Header from '~/components/Header';
 
-const inter = Inter({ subsets: ['latin'] });
+const firaCode = Fira_Code({ subsets: ['latin'], weight: ['400', '700'] });
 
 export const metadata: Metadata = {
   title: 'Krishna Acondy | Lead Full-stack Software Engineer',
@@ -27,7 +27,7 @@ export default function RootLayout({
           sizes='<generated>'
         />
       </Head>
-      <body className={inter.className}>
+      <body className={firaCode.className}>
         <Header />
         {children}
       </body>

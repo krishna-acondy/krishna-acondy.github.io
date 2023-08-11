@@ -1,0 +1,17 @@
+.tab {
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab a {
+  background-color: transparent;
+}
+
+.tab:hover {
+  background-image: linear-gradient(rgb(0 0 0/5%) 0 0);
+}
+
+.tab.active {
+  border-bottom: 2px solid rgba(var(--active-tab-rgb), 1);
+}

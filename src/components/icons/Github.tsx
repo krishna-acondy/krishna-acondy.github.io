@@ -3,7 +3,7 @@ import Icon from './Icon';
 function Github() {
   return (
     <Icon
-      size='3rem'
+      size='2.5rem'
       title='Github'
       url='https://github.com/krishna-acondy'
       viewBox='0 0 98 96'

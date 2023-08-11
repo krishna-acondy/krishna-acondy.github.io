@@ -3,7 +3,7 @@ import Icon from './Icon';
 function Instagram() {
   return (
     <Icon
-      size='3rem'
+      size='2.5rem'
       title='Instagram'
       url='https://www.instagram.com/krishnachaitanya.a/'
       viewBox='0 0 52.313 52.313'

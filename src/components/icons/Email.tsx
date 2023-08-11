@@ -3,7 +3,7 @@ import Icon from './Icon';
 function Email() {
   return (
     <Icon
-      size='3rem'
+      size='2.5rem'
       title='Email'
       url='mailto:krishna.acondy@gmail.com'
       viewBox='0 0 1200 1200'

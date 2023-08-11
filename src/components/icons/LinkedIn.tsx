@@ -3,7 +3,7 @@ import Icon from './Icon';
 function LinkedIn() {
   return (
     <Icon
-      size='3rem'
+      size='2.5rem'
       title='LinkedIn'
       url='https://www.linkedin.com/in/krishna-acondy/'
       viewBox='0 0 50 50'
