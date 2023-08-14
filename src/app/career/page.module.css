@@ -12,6 +12,7 @@
   gap: 1rem;
   flex-wrap: wrap;
   max-width: 75%;
+  animation: fadeIn 0.5s ease-in;
 }
 
 .roles * {
@@ -40,4 +41,26 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

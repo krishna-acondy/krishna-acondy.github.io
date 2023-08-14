@@ -87,7 +87,7 @@ export const volunteerRoles: Role[] = [
     company: 'Internet Freedom Foundation',
     url: 'https://internetfreedom.in',
     description:
-      'Worked with a team of volunteers to design and develop a website for the Digital Patrakar Defence Clinic, which is a project offering pro bono legal advice and assistance to Indian journalists.',
+      'Worked with a team of volunteers to design and develop a website for the Digital Patrakar Defence Clinic, a project offering pro bono legal advice and assistance to Indian journalists.',
     location: { city: 'Remote', country: 'India' },
     startDate: new Date('2021-10-01'),
     tech: ['AWS', 'CSS', 'HTML', 'JavaScript', 'Node.js'],

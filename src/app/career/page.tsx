@@ -31,13 +31,15 @@ export default function Career() {
           />
         ))}
       </div>
-      <div className={styles.roles}>
-        {roleMap[tab]
-          .sort((a, b) => b.startDate.getTime() - a.startDate.getTime())
-          .map((role) => (
-            <RoleCard key={role.company + role.designation} role={role} />
-          ))}
-      </div>
+      {!!tab && (
+        <div className={styles.roles}>
+          {roleMap[tab]
+            .sort((a, b) => b.startDate.getTime() - a.startDate.getTime())
+            .map((role) => (
+              <RoleCard key={role.company + role.designation} role={role} />
+            ))}
+        </div>
+      )}
     </main>
   );
 }
