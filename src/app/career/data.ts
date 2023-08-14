@@ -21,6 +21,8 @@ export type Technology =
   | 'MySQL'
   | 'DynamoDB'
   | 'REST APIs'
+  | 'Firebase'
+  | 'Gatsby'
   | 'E2E Testing';
 
 export type Theme =
@@ -55,6 +57,8 @@ export type Tool =
   | 'ProductBoard'
   | 'Notion'
   | 'Interwoven CMS'
+  | 'Prismic CMS'
+  | 'Ghost CMS'
   | 'Plumtree Portal'
   | 'Sharepoint'
   | 'Microsoft TFS';
@@ -77,7 +81,143 @@ export type Role = {
   tools: Tool[];
 };
 
-export const roles: Role[] = [
+export const volunteerRoles: Role[] = [
+  {
+    designation: 'Volunteer Developer',
+    company: 'Internet Freedom Foundation',
+    url: 'https://internetfreedom.in',
+    description:
+      'Worked with a team of volunteers to design and develop a website for the Digital Patrakar Defence Clinic, which is a project offering pro bono legal advice and assistance to Indian journalists.',
+    location: { city: 'Remote', country: 'India' },
+    startDate: new Date('2021-10-01'),
+    tech: ['AWS', 'CSS', 'HTML', 'JavaScript', 'Node.js'],
+    themes: ['Design', 'DevOps', 'CI/CD', 'Frontend Development'],
+    tools: [
+      'Docker',
+      'GitHub',
+      'GitHub Actions',
+      'Figma',
+      'Adobe Creative Cloud Suite',
+      'Ghost CMS',
+    ],
+  },
+  {
+    designation: 'Volunteer Developer',
+    company: 'Newslaundry',
+    url: 'https://www.newslaundry.com/',
+    description:
+      'Working with a team of volunteers to help design and develop features on the Newslaundry website.',
+    location: { city: 'Remote', country: 'India' },
+    startDate: new Date('2022-10-01'),
+    tech: ['CSS', 'HTML', 'JavaScript', 'Node.js', 'React'],
+    themes: ['Design', 'DevOps', 'CI/CD', 'Frontend Development'],
+    tools: [
+      'Docker',
+      'GitHub',
+      'GitHub Actions',
+      'Figma',
+      'Adobe Creative Cloud Suite',
+    ],
+  },
+];
+
+export const partTimeRoles: Role[] = [
+  {
+    designation: 'Lead Developer',
+    company: 'SASjs',
+    url: 'https://github.com/sasjs',
+    description:
+      'Set up and developed open source projects including a CLI, a VS Code extension and a number of TypeScript libraries.',
+    location: { city: 'Remote', country: 'United Kingdom' },
+    startDate: new Date('2020-03-01'),
+    endDate: new Date('2022-06-30'),
+    tech: [
+      'AWS',
+      'C#',
+      'CSS',
+      'Dotnet Core',
+      'GraphQL',
+      'HTML',
+      'JavaScript',
+      'Node.js',
+      'Angular',
+      'REST APIs',
+      'React',
+      'TypeScript',
+      'PostgreSQL',
+    ],
+    themes: [
+      'Design',
+      'Mentoring',
+      'People Management',
+      'Project Management',
+      'Technical Leadership',
+      'DevOps',
+      'Infrastructure',
+      'CI/CD',
+      'Frontend Development',
+      'Backend Development',
+    ],
+    tools: [
+      'Docker',
+      'Turborepo',
+      'GitHub',
+      'GitHub Actions',
+      'AWS CDK',
+      'Figma',
+      'Adobe Creative Cloud Suite',
+      'Serverless',
+      'Linear',
+      'Jira',
+      'FullStory',
+      'ProductBoard',
+      'Notion',
+    ],
+  },
+  {
+    designation: 'App Developer',
+    company: 'GetMeFit',
+    url: 'https://www.gmfwellbeing.com/',
+    description:
+      'Prototyped, developed and released a platform for fitness trainers to provide classes online.',
+    location: { city: 'Remote', country: 'United Kingdom' },
+    startDate: new Date('2020-01-01'),
+    endDate: new Date('2022-01-30'),
+    tech: [
+      'Firebase',
+      'CSS',
+      'GraphQL',
+      'HTML',
+      'JavaScript',
+      'Node.js',
+      'REST APIs',
+      'React',
+      'TypeScript',
+      'Gatsby',
+    ],
+    themes: [
+      'Design',
+      'Project Management',
+      'Technical Leadership',
+      'DevOps',
+      'Infrastructure',
+      'CI/CD',
+      'Frontend Development',
+      'Backend Development',
+    ],
+    tools: [
+      'Docker',
+      'Prismic CMS',
+      'GitHub',
+      'GitHub Actions',
+      'Figma',
+      'Adobe Creative Cloud Suite',
+      'Notion',
+    ],
+  },
+];
+
+export const workRoles: Role[] = [
   {
     designation: 'Lead Software Engineer',
     company: 'CattleEye',
@@ -111,56 +251,8 @@ export const roles: Role[] = [
       'DevOps',
       'Infrastructure',
       'CI/CD',
-    ],
-    tools: [
-      'Docker',
-      'Turborepo',
-      'GitHub',
-      'GitHub Actions',
-      'AWS CDK',
-      'Figma',
-      'Adobe Creative Cloud Suite',
-      'Serverless',
-      'Linear',
-      'Jira',
-      'FullStory',
-      'ProductBoard',
-      'Notion',
-    ],
-  },
-  {
-    designation: 'Lead Developer',
-    company: 'SASjs',
-    url: 'https://sasjs.io/',
-    description:
-      'Set up and developed open source projects including a CLI, a VS Code extension and a number of TypeScript libraries.',
-    location: { city: 'Remote', country: 'United Kingdom' },
-    startDate: new Date('2020-03-01'),
-    endDate: new Date('2022-06-30'),
-    tech: [
-      'AWS',
-      'C#',
-      'CSS',
-      'Dotnet Core',
-      'GraphQL',
-      'HTML',
-      'JavaScript',
-      'Node.js',
-      'Angular',
-      'REST APIs',
-      'React',
-      'TypeScript',
-      'PostgreSQL',
-    ],
-    themes: [
-      'Design',
-      'Mentoring',
-      'People Management',
-      'Project Management',
-      'Technical Leadership',
-      'DevOps',
-      'Infrastructure',
-      'CI/CD',
+      'Frontend Development',
+      'Backend Development',
     ],
     tools: [
       'Docker',
@@ -208,6 +300,8 @@ export const roles: Role[] = [
       'DevOps',
       'Infrastructure',
       'CI/CD',
+      'Frontend Development',
+      'Backend Development',
     ],
     tools: [
       'Lerna',
@@ -250,6 +344,8 @@ export const roles: Role[] = [
       'Technical Leadership',
       'DevOps',
       'CI/CD',
+      'Frontend Development',
+      'Backend Development',
     ],
     tools: [
       'Docker',
@@ -291,6 +387,8 @@ export const roles: Role[] = [
       'Mentoring',
       'Project Management',
       'Technical Leadership',
+      'Frontend Development',
+      'Backend Development',
     ],
     tools: [
       'Docker',
@@ -312,7 +410,7 @@ export const roles: Role[] = [
     startDate: new Date('2009-07-01'),
     endDate: new Date('2012-07-31'),
     tech: ['CSS', 'C#', 'HTML', 'JavaScript', 'REST APIs', 'MS SQL', 'MySQL'],
-    themes: ['Project Management'],
+    themes: ['Project Management', 'Frontend Development'],
     tools: ['SVN', 'Interwoven CMS', 'Plumtree Portal', 'Sharepoint'],
   },
 ];

@@ -5,21 +5,28 @@ import { usePathname } from 'next/navigation';
 import styles from './Tab.module.css';
 
 type TabProps = {
-  url: string;
+  url?: string;
   label: string;
+  active?: boolean;
+  onClick?: () => unknown;
 };
 
-function Tab({ url, label }: TabProps) {
+function Tab({ url, label, active, onClick }: TabProps) {
   const pathname = usePathname();
   const isCurrentRoute = url === pathname;
 
-  return (
-    <Link href={url}>
-      <div className={`${styles.tab} ${isCurrentRoute ? styles.active : ''}`}>
-        {label}
-      </div>
-    </Link>
+  const tabFragment = (
+    <div
+      className={`${styles.tab} ${
+        isCurrentRoute || active ? styles.active : ''
+      }`}
+      onClick={onClick}
+    >
+      {label}
+    </div>
   );
+
+  return url ? <Link href={url}>{tabFragment}</Link> : tabFragment;
 }
 
 export default Tab;

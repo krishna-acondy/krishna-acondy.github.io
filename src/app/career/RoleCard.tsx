@@ -38,6 +38,8 @@ const techColorMap: Record<Technology, string> = {
   DynamoDB: '#4052d5',
   MySQL: '#ffa518',
   'MS SQL': '#ba1c1b',
+  Firebase: '#ffcb31',
+  Gatsby: '#653499',
 };
 
 const changeBrightness = (hexColor: string, magnitude: number) => {
