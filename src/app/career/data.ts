@@ -223,7 +223,7 @@ export const workRoles: Role[] = [
     company: 'CattleEye',
     url: 'https://cattleeye.com',
     description:
-      'Leading a team with end to end responsibility for new feature development - requirement gathering, design, implementation, delivery, promotion and feedback. Building CattleEye apps and APIs from scratch',
+      'Leading a team with end to end responsibility for new feature development - requirement gathering, design, implementation, delivery, promotion and feedback. Building CattleEye apps and APIs from scratch.',
     location: { city: 'Belfast', country: 'United Kingdom' },
     startDate: new Date('2021-05-01'),
     tech: [
