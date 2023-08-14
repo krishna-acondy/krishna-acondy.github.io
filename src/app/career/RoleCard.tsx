@@ -9,6 +9,8 @@ import styles from './RoleCard.module.css';
 import Card from '~/components/Card';
 import { Role, Technology } from './data';
 import React from 'react';
+import Stack from '~/components/Stack';
+import Badge from '~/components/Badge';
 
 type RoleCardProps = {
   role: Role;
@@ -97,7 +99,10 @@ function RoleCard({ role }: RoleCardProps) {
       }
     >
       <div className={styles.content}>
-        <h2>{role.designation}</h2>
+        <Stack direction='row' alignItems='center' gap={0.25}>
+          <h2>{role.designation}</h2>
+          {!role.endDate && <Badge>Current</Badge>}
+        </Stack>
         <a
           href={role.url}
           className={styles.link}

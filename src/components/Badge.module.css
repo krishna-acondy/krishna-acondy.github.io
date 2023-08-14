@@ -1,0 +1,8 @@
+.badge {
+  border-radius: var(--border-radius);
+  background: linear-gradient(to right, var(--main-gradient));
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  float: left;
+  margin: 0.1rem;
+}

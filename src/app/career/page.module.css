@@ -15,10 +15,6 @@
   animation: fadeIn 0.5s ease-in;
 }
 
-.roles * {
-  flex: 1;
-}
-
 .tabs {
   display: flex;
   gap: 1rem;

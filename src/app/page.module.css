@@ -43,13 +43,7 @@
 }
 
 .button span {
-  background: -webkit-linear-gradient(
-    90deg,
-    #9ae6b4 0%,
-    #81ceb5 30.43%,
-    #539ea9 68.23%,
-    #2b6cb0 98%
-  );
+  background: -webkit-linear-gradient(90deg, var(--main-gradient));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -60,14 +54,7 @@
         rgb(var(--background-start-rgb))
       )
       padding-box,
-    linear-gradient(
-        to right,
-        #9ae6b4 0%,
-        #81ceb5 30.43%,
-        #539ea9 68.23%,
-        #2b6cb0 98%
-      )
-      border-box;
+    linear-gradient(to right, var(--main-gradient)) border-box;
   border-radius: var(--border-radius);
   border: 1px solid transparent;
 }
