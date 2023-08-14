@@ -5,9 +5,3 @@
   justify-content: center;
   padding: 1rem;
 }
-
-@media (max-width: 700px) {
-  .container {
-    margin-top: auto;
-  }
-}
