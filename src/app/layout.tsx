@@ -34,6 +34,7 @@ export default function RootLayout({
         <meta name='twitter:image:type' content='<generated>' />
         <meta name='twitter:image:width' content='<generated>' />
         <meta name='twitter:image:height' content='<generated>' />
+        <meta name='msvalidate.01' content='A1BAC9864AC268197BC79539F9195777' />
       </Head>
       <body className={firaCode.className}>
         <Header />
