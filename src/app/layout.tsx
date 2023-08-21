@@ -11,6 +11,17 @@ export const metadata: Metadata = {
   title: 'Krishna Acondy | Lead Full-stack Software Engineer',
   description:
     'Krishna is an experienced software engineer with over 14 years in the industry, and has led projects in companies across agritech, consumer lifestyle, healthtech, banking and financial services domains.',
+  keywords: [
+    'software developer',
+    'lead engineer',
+    'krishna acondy',
+    'belfast',
+    'frontend development',
+    'aws',
+    'node.js',
+    'javascript',
+    'typescript',
+  ],
 };
 
 export default function RootLayout({
