@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     'javascript',
     'typescript',
   ],
+  twitter: {
+    card: 'summary_large_image',
+  },
 };
 
 export default function RootLayout({
@@ -38,6 +41,7 @@ export default function RootLayout({
           type='image/<generated>'
           sizes='<generated>'
         />
+        <meta name='twitter:card' content='summary_large_image' />
         <meta property='og:image' content='<generated>' />
         <meta property='og:image:type' content='<generated>' />
         <meta property='og:image:width' content='<generated>' />
@@ -47,7 +51,6 @@ export default function RootLayout({
         <meta name='twitter:image:width' content='<generated>' />
         <meta name='twitter:image:height' content='<generated>' />
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='msvalidate.01' content='A1BAC9864AC268197BC79539F9195777' />
       </Head>
       <body className={firaCode.className}>
         <Header />
