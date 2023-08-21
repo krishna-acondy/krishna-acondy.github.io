@@ -41,9 +41,9 @@ export default function Home() {
           }}
         ></div>
         <div className={`${firaCode.className} ${styles.header}`}>
-          <h2>
+          <h1>
             <Typewriter words={['Krishna Acondy']} typeSpeed={typingSpeed} />
-          </h2>
+          </h1>
           {showSubtitle && (
             <h4>
               <Typewriter
