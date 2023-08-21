@@ -7,6 +7,7 @@ import Header from '~/components/Header';
 const firaCode = Fira_Code({ subsets: ['latin'], weight: ['400', '700'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://krishna-acondy.io'),
   title: 'Krishna Acondy | Lead Full-stack Software Engineer',
   description:
     'Krishna is an experienced software engineer with over 14 years in the industry, and has led projects in various companies across domains such as agritech, consumer lifestyle, healthtech, banking and financial services.',
