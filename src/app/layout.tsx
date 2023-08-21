@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title,
     description,
+    site: 'https://krishna-acondy.io',
   },
 };
 
