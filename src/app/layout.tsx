@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     title,
     description,
     site: '@KrishnaAcondy',
+    creator: '@KrishnaAcondy',
   },
   openGraph: {
     type: 'website',
@@ -52,7 +53,6 @@ export default function RootLayout({
           type='image/<generated>'
           sizes='<generated>'
         />
-        <meta name='twitter:card' content='summary_large_image' />
         <meta property='og:image' content='<generated>' />
         <meta property='og:image:type' content='<generated>' />
         <meta property='og:image:width' content='<generated>' />
@@ -61,7 +61,7 @@ export default function RootLayout({
         <meta name='twitter:image:type' content='<generated>' />
         <meta name='twitter:image:width' content='<generated>' />
         <meta name='twitter:image:height' content='<generated>' />
-        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:domain' content='krishna-acondy.io' />
       </Head>
       <body className={firaCode.className}>
         <Header />
