@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     description,
     site: 'https://krishna-acondy.io',
   },
+  openGraph: {
+    type: 'website',
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({
